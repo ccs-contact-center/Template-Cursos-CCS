@@ -27,7 +27,7 @@ class ActividadView extends Component {
                 Texto1! ActividadView
               </CardHeader>
               <CardBody className="text-center">
-             
+             <List2></List2>
               </CardBody>
             </Card>
           </Col>
