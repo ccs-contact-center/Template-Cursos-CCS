@@ -54,6 +54,12 @@ export default {
           url: '/temarioViews/TemaSeisView',
           icon: 'icon-note',
         },
+
+        {
+          name: 'Actividad',
+          url: '/temarioViews/ActividadView',
+          icon: 'icon-puzzle',
+        },
        
         
       ],
