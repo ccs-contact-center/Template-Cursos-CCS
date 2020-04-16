@@ -11,6 +11,7 @@ const TemaTresView = React.lazy(() => import('./views/temarioViews/TemaTresView'
 const TemaCuatroView = React.lazy(() => import('./views/temarioViews/TemaCuatroView'));
 const TemaCincoView = React.lazy(() => import('./views/temarioViews/TemaCincoView'));
 const TemaSeisView = React.lazy(() => import('./views/temarioViews/TemaSeisView'));
+const ActividadView = React.lazy(() => import('./views/temarioViews/ActividadView'));
 
 
 const routes = [
@@ -25,6 +26,7 @@ const routes = [
   { path: '/temarioViews/TemaCuatroView', name: 'Lineamientos generales de la Metodología P 3', component: TemaCuatroView },
   { path: '/temarioViews/TemaCincoView', name: 'Descripción del procedimiento ', component: TemaCincoView },
   { path: '/temarioViews/TemaSeisView', name: 'Seguimiento de operaciones', component: TemaSeisView },
+  { path: '/temarioViews/ActividadView', name: 'Seguimiento de operaciones', component: ActividadView },
 
 ];
 
