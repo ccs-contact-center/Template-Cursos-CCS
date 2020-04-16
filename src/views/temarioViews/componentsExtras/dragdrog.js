@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { ReactSortable } from 'react-sortablejs'
+import Nota from './notasReferencia'
 
 class List2 extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class List2 extends Component {
   render() {
     return (
       <div className="row align-items-start ">
-        <div className="col bg-dark">
+        <div className="col bg-fondo-btn">
           <h6 className="text-center text-white mt-2">Terminos</h6>
 
           <ReactSortable
@@ -37,7 +38,7 @@ class List2 extends Component {
             {this.state.list.map(item => (
               <div key={item.id}>
                 <div className="card  m-3 cursor-draggable text-center">
-                  <div className="">{item.name}</div>
+                  <div className="text-dark">{item.name}</div>
                 </div>
               </div>
             ))}
@@ -54,13 +55,25 @@ class List2 extends Component {
           >
             {this.state.list2.map(item => (
               <div key={item.id}>
-                <div className="card m-3 cursor-draggable text-center">
+                <div className="card m-3 cursor-draggable text-center text-dark">
                   {item.name}
                 </div>
               </div>
             ))}
           </ReactSortable>
         </div>
+
+        <div className="col-12 mt-3 ">
+          <button className="btn btn-primary">Enviar</button>
+        </div>
+        <div className="col-12 mt-3 ">
+
+       
+        <Nota
+          title1="Instrucción:"
+          content1="Arrastre los las Definiciones correctas."
+        />
+         </div>
       </div>
     )
   }
