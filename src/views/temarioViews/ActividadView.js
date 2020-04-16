@@ -6,7 +6,7 @@ import {
   Col,
   Row
 } from 'reactstrap';
-import withAuth from '../../services/withAuth';
+
 import List2 from './componentsExtras/dragdrog';
 
 class ActividadView extends Component {
@@ -23,8 +23,8 @@ class ActividadView extends Component {
         <Row>
           <Col>
             <Card>
-              <CardHeader className="text-center">
-                Texto1! ActividadView
+              <CardHeader className="">
+               <h2> Actividad</h2>
               </CardHeader>
               <CardBody className="text-center">
              <List2></List2>
