@@ -26,7 +26,7 @@ const routes = [
   { path: '/temarioViews/TemaCuatroView', name: 'Lineamientos generales de la Metodología P 3', component: TemaCuatroView },
   { path: '/temarioViews/TemaCincoView', name: 'Descripción del procedimiento ', component: TemaCincoView },
   { path: '/temarioViews/TemaSeisView', name: 'Seguimiento de operaciones', component: TemaSeisView },
-  { path: '/temarioViews/ActividadView', name: 'Seguimiento de operaciones', component: ActividadView },
+  { path: '/temarioViews/ActividadView', name: 'Actividad', component: ActividadView },
 
 ];
 
