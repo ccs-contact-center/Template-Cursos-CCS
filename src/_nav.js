@@ -58,9 +58,9 @@ export default {
         {
           name: 'Actividad',
           url: '/temarioViews/ActividadView',
-          icon: 'icon-puzzle',}
+          icon: 'icon-puzzle'}
           
-        },
+        
        
         
       ],

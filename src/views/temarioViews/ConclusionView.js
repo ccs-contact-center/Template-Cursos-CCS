@@ -1,35 +1,20 @@
-import React, { Component } from 'react';
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Col,
-  Row
-} from 'reactstrap';
-
+import React, { Component } from "react";
+import { CardBody, CardHeader } from "reactstrap";
 
 class ConclusionView extends Component {
-  loading = () => <div className="animated fadeIn pt-1 text-center">Cargando...</div>
+  loading = () => (
+    <div className="animated fadeIn pt-1 text-center">Cargando...</div>
+  );
 
   render() {
-
     return (
       <div className="animated fadeIn">
-        <Row>
-          <Col>
-            <Card>
-              <CardHeader className="text-center">
-                Texto1!  ConclusionView
-              </CardHeader>
-              <CardBody className="text-center">
-                  contenido texto ConclusionView
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
+        <CardHeader className="text-center">Texto1! ConclusionView</CardHeader>
+        <CardBody className="text-center">
+          contenido texto ConclusionView
+        </CardBody>
       </div>
     );
   }
 }
-export default ConclusionView
-
+export default ConclusionView;

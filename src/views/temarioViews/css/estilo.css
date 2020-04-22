@@ -1,208 +1,206 @@
-.bordeImagen{
-    border:7px double #C8CED3;
-	border-radius: 20px 20px 20px 20px; 
-	
-	background-color:#C8CED3;
-	}
+.bordeImagen {
+  border: 5px double #c8ced3;
+  border-radius: 20px 20px 20px 20px;
 
-.bg-fondo-btn{
-	background-color: #737276 !important;
-	color:white !important;
-}	
-
-.bordeAcordeon{
-	border-bottom: 1px solid #29363d !important;
+  background-color: #c8ced3;
 }
 
-
-.cajaA1{
-	border-bottom: solid 6px #c00327 !important;
-	border-top: solid 6px #c00327 !important;
-	border-left: solid 6px #c00327 !important;
-	border-right: solid 6px #c00327 !important;
-	border-radius: 10px 10px 10px 10px;
-	font-size: 16px;
-	background-color: rgba(255,255,255, 0.4);
-	font-family: Arial, Helvetica, sans-serif;
-	padding:15px 15px 15px 15px;
-	/*border: 1px solid #b5ccf8;*/
+.bg-fondo-btn {
+  background-color: rgba(240, 243, 245, 1) !important;
+  color: rgba(80, 80, 80, 1) !important;
+  border-radius: 5px;
+  border: 1px solid #c8ced3;
 }
 
-.cajaA2{
-	border-bottom: solid 6px #b0afb4 !important;
-	border-top: solid 6px #b0afb4 !important;
-	border-left: solid 6px #b0afb4 !important;
-	border-right: solid 6px #b0afb4 !important;
-	border-radius: 10px 10px 10px 10px;
-	font-size: 16px;
-	background-color: rgba(255,255,255, 0.4);
-	font-family: Arial, Helvetica, sans-serif;
-	padding:15px 15px 15px 15px;
-	/*border: 1px solid #b5ccf8;*/
+.fondoAcordeon {
+  background-color: rgba(240, 243, 245, 1) !important;
+  border-bottom: 0.5px dashed rgba(0, 0, 0, 0.3) !important;
+  color: rgba(192, 3, 39, 0.7) !important;
 }
-.cajaA3{
-	border-bottom: solid 6px #737276 !important;
-	border-top: solid 6px #737276 !important;
-	border-left: solid 6px #737276 !important;
-	border-right: solid 6px #737276 !important;
-	border-radius: 10px 10px 10px 10px;
-	font-size: 16px;
-	background-color: rgba(255,255,255, 0.4);
-	font-family: Arial, Helvetica, sans-serif;
-	padding:15px 15px 15px 15px;
-	/*border: 1px solid #b5ccf8;*/
-	/**/
+
+.bgActividad {
+  background-color: rgba(62, 65, 67, 0.43) !important;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.cajaA1 {
+  border: solid 3px #c00327 !important;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 15px 15px 15px;
+  /*border: 1px solid #b5ccf8;*/
+}
+
+.cajaA2 {
+  border: solid 3px #b0afb4 !important;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 15px 15px 15px;
+  /*border: 1px solid #b5ccf8;*/
+}
+.cajaA3 {
+  border: solid 3px #737276 !important;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 15px 15px 15px;
+  /*border: 1px solid #b5ccf8;*/
+  /**/
 }
 
 .centrado-fila {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /*COMPATIBILIDAD CON EXPLORER*/
-    display: -ms-flexbox;
-    -ms-flex-direction: row;
-     -ms-flex-align: center;
-    -ms-flex-pack: center;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /*COMPATIBILIDAD CON EXPLORER*/
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
-p,h1,h2,h3,h4,h5,li,ul{
-	font-family: Arial, Helvetica, sans-serif !important;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ul {
+  font-family: Arial, Helvetica, sans-serif !important;
 }
-td,th{
-	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif !important;
-}
-
-.paddingCarousel{
-   padding-left:10%;
-   padding-right:12%;
-   padding-top: 10px;
-
-}
-
-.bordeBlancoTabla{
-	border:solid 1px;
+td,
+th {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
-
-.centrado-distribuido{
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	
-	justify-content: space-around;
-	align-items: center;
+.paddingCarousel {
+  padding-left: 10%;
+  padding-right: 12%;
+  padding-top: 10px;
 }
 
-.TextoPie{
-	font-size: 10px;
-	font-family: Arial, Helvetica, sans-serif !important;
+.bordeBlancoTabla {
+  border: solid 1px;
 }
 
+.centrado-distribuido {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-.brillo{
-	-webkit-animation: brillando 2000ms infinite;
-	-moz-animation: brillando 2000ms infinite;
-	-o-animation: brillando 2000ms infinite; 
-	animation: brillando 2000ms infinite;  
-	}
+  justify-content: space-around;
+  align-items: center;
+}
 
-@-o-keyframes brillando { 
-	0% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .0) inset; 
-		border:red 2px solid !important;
-		}
-		
-	50% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .55) inset; 
-		border:red 2px solid !important;
-		}
-		
-	100% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .0) inset; 
-		border:red 2px solid !important;
-		}
-	}
+.TextoPie {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
 
-@-webkit-keyframes brillando { 
-	0% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .0) inset; 
-		border:red 2px solid !important;
-		}
-		
-	50% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .55) inset; 
-		border:red 2px solid !important;
-		}
-		
-	100% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .0) inset; 
-		border:red 2px solid !important;
-		}
-	}
+.brillo {
+  -webkit-animation: brillando 2000ms infinite;
+  -moz-animation: brillando 2000ms infinite;
+  -o-animation: brillando 2000ms infinite;
+  animation: brillando 2000ms infinite;
+}
 
-@-moz-keyframes brillando { 
-	0% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .0) inset; 
-		border:red 2px solid !important;
-		}
-		
-	50% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .55) inset; 
-		border:red 2px solid !important;
-		}
-		
-	100% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .0) inset; 
-		border:red 2px solid !important;
-		}
-	}
+@-o-keyframes brillando {
+  0% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0) inset;
+    border: red 2px solid !important;
+  }
 
-@keyframes brillando { 
-	0% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .0) inset; 
-		border:red 2px solid !important;
-		}
-		
-	50% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .55) inset; 
-		border:red 2px solid !important;
-		}
-		
-	100% {
-		box-shadow:0 0 8em 1em rgba(178, 0, 0, .0) inset; 
-		border:red 2px solid !important;
-		}
-	}
+  50% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0.55) inset;
+    border: red 2px solid !important;
+  }
 
+  100% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0) inset;
+    border: red 2px solid !important;
+  }
+}
 
-	.btnAct:active {
-		transform: translateY(4px);
-		color: #b0afb4;
-	
-	  }
+@-webkit-keyframes brillando {
+  0% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0) inset;
+    border: red 2px solid !important;
+  }
 
-	  .btnFocus:focus {
-		margin: 16px 0;
-		display: block;
-	}
+  50% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0.55) inset;
+    border: red 2px solid !important;
+  }
 
+  100% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0) inset;
+    border: red 2px solid !important;
+  }
+}
 
-	@media (max-width: 506px) and (min-width:0px) {
-		#TConcentrado {
-		 width:100% ;
-		}
-	  }
-	  @media (max-width: 606px) and (min-width:0px) {
-		#TablaAnexos {
-		 width:100% ;
-		}
-	  }
+@-moz-keyframes brillando {
+  0% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0) inset;
+    border: red 2px solid !important;
+  }
 
-	  
-	
+  50% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0.55) inset;
+    border: red 2px solid !important;
+  }
+
+  100% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0) inset;
+    border: red 2px solid !important;
+  }
+}
+
+@keyframes brillando {
+  0% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0) inset;
+    border: red 2px solid !important;
+  }
+
+  50% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0.55) inset;
+    border: red 2px solid !important;
+  }
+
+  100% {
+    box-shadow: 0 0 8em 1em rgba(178, 0, 0, 0) inset;
+    border: red 2px solid !important;
+  }
+}
+
+.btnAct:active {
+  transform: translateY(4px);
+  color: #b0afb4;
+}
+
+.btnFocus:focus {
+  margin: 16px 0;
+  display: block;
+}
+
+@media (max-width: 506px) and (min-width: 0px) {
+  #TConcentrado {
+    width: 100%;
+  }
+}
+@media (max-width: 606px) and (min-width: 0px) {
+  #TablaAnexos {
+    width: 100%;
+  }
+}
