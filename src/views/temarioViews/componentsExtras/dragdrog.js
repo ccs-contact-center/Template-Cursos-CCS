@@ -215,7 +215,7 @@ class List2 extends Component {
         <div className="col-12 mt-3 ">
           <Nota
             title1="Instrucción:"
-            content1="Arrastre los las Definiciones correctas."
+            content1="Arrastre los las Definiciones correctas a la tabla."
           />
         </div>
       </div>
