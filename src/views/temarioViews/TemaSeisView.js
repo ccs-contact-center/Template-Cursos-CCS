@@ -19,7 +19,7 @@ class TemaSeisView extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <Card>
+        
           <CardHeader className="text-left">
             <h3>Seguimiento de operaciones</h3>
           </CardHeader>
@@ -27,9 +27,9 @@ class TemaSeisView extends Component {
             <Row>
               <Col xs="12">
                 <Accordion>
-                  <Col className=" btn bg-fondo-btn bordeAcordeon" style={{ padding: '0' }}>
+                <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                      <span className="text-light">
+                      <span>
                         Seguimiento de operaciones
                       </span>
                     </Accordion.Toggle>
@@ -82,9 +82,9 @@ class TemaSeisView extends Component {
                       </div>
                     </Accordion.Collapse>
                   </div>
-                  <Col className=" btn bg-fondo-btn bordeAcordeon" style={{ padding: '0' }}>
+                  <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                     <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                      <span className="text-light"> Elaboración reportes </span>
+                      <span> Elaboración reportes </span>
                     </Accordion.Toggle>
                   </Col>
                   <div className="bg-light">
@@ -152,9 +152,9 @@ class TemaSeisView extends Component {
                       </div>
                     </Accordion.Collapse>
                   </div>
-                  <Col className=" btn bg-fondo-btn bordeAcordeon " style={{ padding: '0' }}>
+                  <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                     <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                      <span className="text-light">Tripartita</span>
+                      <span>Tripartita</span>
                     </Accordion.Toggle>
                   </Col>
                   <div className="bg-light">
@@ -197,9 +197,9 @@ class TemaSeisView extends Component {
                       </div>
                     </Accordion.Collapse>
                   </div>
-                  <Col className=" btn bg-fondo-btn bordeAcordeon " style={{ padding: '0' }}>
+                  <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                     <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                      <span className="text-light">
+                      <span>
                         Actividades adicionales{' '}
                       </span>
                     </Accordion.Toggle>
@@ -243,9 +243,9 @@ class TemaSeisView extends Component {
                       </div>
                     </Accordion.Collapse>
                   </div>
-                  <Col className=" btn bg-fondo-btn bordeAcordeon" style={{ padding: '0' }}>
+                  <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                     <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                      <span className="text-light">ANEXOS </span>
+                      <span>ANEXOS </span>
                     </Accordion.Toggle>
                   </Col>
                   <div className="bg-light">
@@ -257,9 +257,9 @@ class TemaSeisView extends Component {
                       </div>
                     </Accordion.Collapse>
                   </div>
-                  <Col className=" btn bg-fondo-btn bordeAcordeon" style={{ padding: '0' }}>
+                  <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                     <Accordion.Toggle as={Button} variant="link" eventKey="5">
-                      <span className="text-light">Control de cambios </span>
+                      <span>Control de cambios </span>
                     </Accordion.Toggle>
                   </Col>
                   <div className="bg-light">
@@ -279,7 +279,7 @@ class TemaSeisView extends Component {
               </Col>
             </Row>
           </CardBody>
-        </Card>
+      
       </div>
     )
   }
