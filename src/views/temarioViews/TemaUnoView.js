@@ -11,7 +11,7 @@ class TemaUnoView extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <Card>
+   
           <CardHeader className="text-left">
             <h3>Definiciones</h3>
           </CardHeader>
@@ -22,7 +22,7 @@ class TemaUnoView extends Component {
                   <Carousel.Item className="pl-4">
                     <Row>
                       <Col xs="12" className="mb-4">
-                        <div className="paddingCarousel text-justify">
+                        <div className="paddingCarousel text-justify text-dark">
                           <ul className="pl-2">
                             <li>
                               <b>In Bound</b>: Transacciones de entrada que
@@ -62,7 +62,7 @@ class TemaUnoView extends Component {
                   <Carousel.Item>
                     <Row>
                       <Col xs="12" className="mb-4">
-                        <div className="paddingCarousel text-justify">
+                        <div className="paddingCarousel text-justify text-dark">
                           <ul>
                             <li>
                               <b>Monitoreo</b>: Evaluación de una llamada con el
@@ -98,7 +98,7 @@ class TemaUnoView extends Component {
                   <Carousel.Item>
                     <Row>
                       <Col xs="12" className="mb-4">
-                        <div className="paddingCarousel text-justify">
+                        <div className="paddingCarousel text-justify text-dark">
                           <ul>
                             <li>
                               <b>AHT</b>: Tiempo promedio de relación con el
@@ -133,7 +133,7 @@ class TemaUnoView extends Component {
               </Col>
             </Row>
           </CardBody>
-        </Card>
+   
       </div>
     )
   }
