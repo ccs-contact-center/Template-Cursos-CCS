@@ -6,16 +6,16 @@
 	}
 
 .bg-fondo-btn{
-	background-color: #737276 !important;
-	color:white !important;
+	background-color:#C8CED3 !important;
+	color:black !important;
 }	
 .bg-fondo-btn2{
-	background-color: #b0afb4 !important;
+	background-color:  #737276 !important;
 	color:white !important;
 }	
 
 .bordeAcordeon{
-	border-bottom: 1px solid #29363d !important;
+	border-bottom: 1px solid #737276	 !important;
 }
 
 
