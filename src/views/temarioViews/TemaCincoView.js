@@ -50,7 +50,6 @@ class TemaDosView extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <Card>
           <CardHeader className="text-left">
             <h3>Descripción del procedimiento</h3>
           </CardHeader>
@@ -60,12 +59,12 @@ class TemaDosView extends Component {
                 <Nav tabs className="text-center">
                   <NavItem className="d-flex justify-content-center">
                     <NavLink
-                     style={{backgroundColor: '#737276'}}
+                     //style={{backgroundColor: '#737276'}}
                       className={
                         (classnames({
                           active: this.state.activeTab === '1',
                         }),
-                        ' btn text-light btnAct')
+                        ' btn bg-fondo-btn ')
                        
                       }
                       onClick={() => {
@@ -82,12 +81,11 @@ class TemaDosView extends Component {
 
                   <NavItem>
                     <NavLink
-                     style={{backgroundColor: '#737276'}}
                       className={
                         (classnames({
                           active: this.state.activeTab === '2',
                         }),
-                        ' btn text-light btnAct')
+                        ' btn bg-fondo-btn')
                       }
                       onClick={() => {
                         this.toggle('2')
@@ -102,12 +100,11 @@ class TemaDosView extends Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                     style={{backgroundColor: '#737276'}}
                       className={
                         (classnames({
                           active: this.state.activeTab === '3',
                         }),
-                        ' btn text-light btnAct')
+                        ' btn bg-fondo-btn')
                       }
                       onClick={() => {
                         this.toggle('3')
@@ -122,12 +119,11 @@ class TemaDosView extends Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                     style={{backgroundColor: '#737276'}}
                       className={
                         (classnames({
                           active: this.state.activeTab === '4',
                         }),
-                        ' btn text-light btnAct')
+                        ' btn bg-fondo-btn')
                       }
                       onClick={() => {
                         this.toggle('4')
@@ -143,8 +139,10 @@ class TemaDosView extends Component {
                 </Nav>
               </Col>
               <Col xs="12">
-                <TabContent activeTab={this.state.activeTab}>
-                  <TabPane tabId="0">
+                <TabContent  style={{border:'none'}} activeTab={this.state.activeTab}>
+                  <TabPane tabId="0" 
+                     
+                  >
                     <p></p>
                   </TabPane>
                   <TabPane tabId="1">
@@ -425,7 +423,7 @@ class TemaDosView extends Component {
               </Col>
             </Row>
           </CardBody>
-        </Card>
+    
       </div>
     )
   }
