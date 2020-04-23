@@ -210,7 +210,8 @@ class List2 extends Component {
         </div>
 
         <div className="col-12 mt-3 ">
-          <button className="btn btn-primary">Enviar</button>
+          <button className="btn btn-primary" 
+          >Enviar</button>
         </div>
         <div className="col-12 mt-3 ">
           <Nota
