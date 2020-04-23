@@ -22,14 +22,14 @@ class ActividadView extends Component {
 
         <Row>
           <Col>
-            <Card>
+            
               <CardHeader className="">
                <h2> Actividad</h2>
               </CardHeader>
               <CardBody className="text-center">
              <List2></List2>
               </CardBody>
-            </Card>
+          
           </Col>
         </Row>
       </div>
