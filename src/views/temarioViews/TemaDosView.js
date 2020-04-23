@@ -45,17 +45,17 @@ class TemaDosView extends Component {
   render() {
     return (
       <div className="animated fadeIn ">
-        <Card>
+   
         <CardHeader className="text-left">
           <h3>Lineamientos generales de la Metodología</h3>
         </CardHeader>
         <CardBody className="text-center">
           <Row>
-            <Col xs="12" style={{ padding: '0' }}>
+            <Col xs="12">
               <Accordion>
-                <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{backgroundColor:'#737276', padding:'0px',}}>
+                <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                   <Accordion.Toggle as={Button} variant="link" eventKey="0" >
-                    <span className="text-light ">In Bound</span>
+                    <span>In Bound</span>
                   </Accordion.Toggle>
                 </Col>
                 <div className="bg-light">
@@ -70,7 +70,7 @@ class TemaDosView extends Component {
                                   (classnames({
                                     active: this.state.activeTab === '1',
                                   }),
-                                  'btn-primary btn btnAct text-light btnFocus')
+                                  'bg-fondo-btn btn btnAct text-danger ')
                                 }
                                 onClick={() => {
                                   this.toggle('1')
@@ -88,7 +88,7 @@ class TemaDosView extends Component {
                                   (classnames({
                                     active: this.state.activeTab === '2',
                                   }),
-                                  'btn-primary text-light btnAct')
+                                  'bg-fondo-btn btn btnAct text-danger ')
                                 }
                                 onClick={() => {
                                   this.toggle('2')
@@ -108,7 +108,7 @@ class TemaDosView extends Component {
                                   (classnames({
                                     active: this.state.activeTab === '3',
                                   }),
-                                  'btn-primary text-light btnAct')
+                                  'bg-fondo-btn btn btnAct text-danger ')
                                 }
                                 onClick={() => {
                                   this.toggle('3')
@@ -154,9 +154,9 @@ class TemaDosView extends Component {
                     </Row>
                   </Accordion.Collapse>
                 </div>
-                <Col className=" btn btn-dark bordeAcordeon" style={{ padding: '0',backgroundColor:'#737276',border:'none'}}>
+                <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                   <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    <span className="text-light">Out Bound</span>
+                    <span>Out Bound</span>
                   </Accordion.Toggle>
                 </Col>
                 <div className="bg-light">
@@ -247,9 +247,9 @@ class TemaDosView extends Component {
                     </Row>
                   </Accordion.Collapse>
                 </div>
-                <Col className=" btn btn-dark bordeAcordeon" style={{ padding: '0', backgroundColor:'#737276',border:'none' }}>
+                <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                   <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                    <span className="text-light">Soporte</span>
+                    <span>Soporte</span>
                   </Accordion.Toggle>
                 </Col>
                 <div className="bg-light">
@@ -340,9 +340,9 @@ class TemaDosView extends Component {
                     </Row>
                   </Accordion.Collapse>
                 </div>
-                <Col className="btn-dark bordeAcordeon " style={{ padding: '0', backgroundColor:'#737276',border:'none' }}>
+                <Col className=" btn  bg-fondo-btn bordeAcordeon  " style={{ padding:'0px',}}>
                   <Accordion.Toggle as={Button} variant="link" eventKey="3" className="">
-                    <span className="text-light btnAct ">WhatsApp y Mails</span>
+                    <span >WhatsApp y Mails</span>
                   </Accordion.Toggle>
                 </Col>
                 <div className="bg-light">
@@ -467,7 +467,7 @@ class TemaDosView extends Component {
             </Col>
           </Row>
         </CardBody>
-        </Card>
+  
       </div>
     )
   }
