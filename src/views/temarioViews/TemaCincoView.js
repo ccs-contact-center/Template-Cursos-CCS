@@ -64,18 +64,14 @@ class TemaDosView extends Component {
                         (classnames({
                           active: this.state.activeTab === '1',
                         }),
-                        ' btn bg-fondo-btn ')
+                        ' btn bg-fondo-btn text-center text-danger')
                        
                       }
                       onClick={() => {
                         this.toggle('1')
                       }}
                     >
-                      <div className=" text-center ">
-                        
-                          <b>1. Monitoreo</b>
-                      
-                      </div>
+                       <b>1. Monitoreo</b>
                     </NavLink>
                   </NavItem>
 
@@ -85,17 +81,13 @@ class TemaDosView extends Component {
                         (classnames({
                           active: this.state.activeTab === '2',
                         }),
-                        ' btn bg-fondo-btn')
+                        ' btn bg-fondo-btn text-center text-danger')
                       }
                       onClick={() => {
                         this.toggle('2')
                       }}
                     >
-                      <div color="primary" className=" text-center">
-                        
-                          <b>2. Retroalimentación</b>
-                      
-                      </div>
+                      <b>2. Retroalimentación</b>
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -104,17 +96,13 @@ class TemaDosView extends Component {
                         (classnames({
                           active: this.state.activeTab === '3',
                         }),
-                        ' btn bg-fondo-btn')
+                        ' btn bg-fondo-btn text-center text-danger')
                       }
                       onClick={() => {
                         this.toggle('3')
                       }}
                     >
-                      <div color="primary" className=" text-center">
-                        
-                          <b>2.1. Coaching</b>
-                      
-                      </div>
+                       <b>2.1. Coaching</b>
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -123,17 +111,13 @@ class TemaDosView extends Component {
                         (classnames({
                           active: this.state.activeTab === '4',
                         }),
-                        ' btn bg-fondo-btn')
+                        ' btn bg-fondo-btn text-center text-danger')
                       }
                       onClick={() => {
                         this.toggle('4')
                       }}
                     >
-                      <div color="primary" className=" text-center">
-                        
-                          <b>2.2. FODA</b>
-                        
-                      </div>
+                      <b>2.2. FODA</b>
                     </NavLink>
                   </NavItem>
                 </Nav>
