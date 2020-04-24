@@ -67,10 +67,10 @@ class List2 extends Component {
         </div>
 
         <div className="col">
-          <div className="card  bg-fondo-btn pl-4 pr-4">
-            <h6 className="text-center text-white mt-2">¡Arrastra aqui!</h6>
+          <div className="card  bg-fondo-btn2 pl-4 pr-4">
+            <h6 className="text-center text-dark mt-2">¡Arrastra aqui!</h6>
                  
-            <table className="table table-bordered ">
+            <table className="table table-bordered  " style={{border:'red'}}>
               <tbody>
                 <tr>
                   <th rowspan="5" className="align-middle text-danger">
