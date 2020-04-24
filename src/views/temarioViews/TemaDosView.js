@@ -170,7 +170,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '4',
                                 }),
-                                'btn-primary btn text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('4')
@@ -188,7 +188,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '5',
                                 }),
-                                'btn-primary text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('5')
@@ -205,7 +205,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '6',
                                 }),
-                                'btn-primary text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('6')
@@ -263,7 +263,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '7',
                                 }),
-                                'btn-primary btn text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('7')
@@ -281,7 +281,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '8',
                                 }),
-                                'btn-primary text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('8')
@@ -298,7 +298,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '9',
                                 }),
-                                'btn-primary text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('9')
@@ -356,7 +356,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '10',
                                 }),
-                                'btn-primary btn text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('10')
@@ -374,7 +374,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '11',
                                 }),
-                                'btn-primary text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('11')
@@ -391,7 +391,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '12',
                                 }),
-                                'btn-primary text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('12')
@@ -408,7 +408,7 @@ class TemaDosView extends Component {
                                 (classnames({
                                   active: this.state.activeTab === '13',
                                 }),
-                                'btn-primary btn text-light btnAct')
+                                'bg-fondo-btn btn btnAct text-danger ')
                               }
                               onClick={() => {
                                 this.toggle('13')
