@@ -264,7 +264,8 @@ class TemaSeisView extends Component {
                   </Col>
                   <div className="bg-light">
                     <Accordion.Collapse eventKey="5">
-                      <div className="mx-3">
+                      <div className="mx-3 ">
+                        <br/>
                         <TablaControlCambios />
                       </div>
                     </Accordion.Collapse>
