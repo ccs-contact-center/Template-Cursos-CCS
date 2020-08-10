@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardBody, CardHeader, Col, Row } from 'reactstrap'
+import {  CardBody, CardHeader, Col, Row } from 'reactstrap'
 import {
   TablaLineaHistorico,
   TablasImputables,
