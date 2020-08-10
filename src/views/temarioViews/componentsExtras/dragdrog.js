@@ -1,35 +1,40 @@
-import React, { Component } from 'react'
-import { ReactSortable } from 'react-sortablejs'
-import Nota from './notasReferencia'
+import React, { Component } from "react";
+import { ReactSortable } from "react-sortablejs";
+import Nota from "./notasReferencia";
+import swal from "sweetalert";
+import AuthService from "../../../services/AuthService";
+import API_CCS from "../../../services/API_CCS";
+const API = new API_CCS();
 
 class List2 extends Component {
-  constructor(props) {
-    super(props)
+  constructor(state) {
+    super(state);
+    this.Auth = new AuthService();
     this.state = {
       list: [
-        { id: '1', name: 'DESCRIPCIÓN' },
+        { id: "1", name: "DESCRIPCIÓN" },
         {
-          id: '6 ',
+          id: "6 ",
           name:
-            '	Se realiza sondeo sobre las respuestas brindadas en la encuesta (proporcionado por Altán Redes) para la correcta continuidad del proceso. ',
+            "	Se realiza sondeo sobre las respuestas brindadas en la encuesta (proporcionado por Altán Redes) para la correcta continuidad del proceso. ",
         },
-        { id: '2', name: '	SALUDO' },
+        { id: "2", name: "	SALUDO" },
         {
-          id: '8 ',
+          id: "8 ",
           name:
-            '	Le atendió (Nombre y Apellido) de ALTÁN REDES; Que tenga un excelente día /tarde/noche.',
+            "	Le atendió (Nombre y Apellido) de ALTÁN REDES; Que tenga un excelente día /tarde/noche.",
         },
-        { id: '3', name: '	Lineamientos' },
+        { id: "3", name: "	Lineamientos" },
         {
-          id: '7 ',
+          id: "7 ",
           name:
-            '	Agradezco su tiempo y le comento que se dará seguimiento a las observaciones indicadas durante la llamada (indicando los puntos que tendrán seguimiento).',
+            "	Agradezco su tiempo y le comento que se dará seguimiento a las observaciones indicadas durante la llamada (indicando los puntos que tendrán seguimiento).",
         },
-        { id: '4 ', name: '	AYUDA ADICIONAL/ DESPEDIDA ' },
+        { id: "4 ", name: "	AYUDA ADICIONAL/ DESPEDIDA " },
         {
-          id: '5 ',
+          id: "5 ",
           name:
-            '	Buenos (días, tardes, noches) mi nombre es__________________ le llamo de Altán Redes el motivo de esta llamada, es para dar continuidad a la encuesta que fue realizada con usted hace unas semanas donde comentó que (se informa sobre los resultados obtenidos en la encuesta que le realizaron), por lo que el objetivo es dar seguimiento y entender de manera precisa algunos puntos específicos: ',
+            "	Buenos (días, tardes, noches) mi nombre es__________________ le llamo de Altán Redes el motivo de esta llamada, es para dar continuidad a la encuesta que fue realizada con usted hace unas semanas donde comentó que (se informa sobre los resultados obtenidos en la encuesta que le realizaron), por lo que el objetivo es dar seguimiento y entender de manera precisa algunos puntos específicos: ",
         },
       ],
       list2: [],
@@ -40,6 +45,44 @@ class List2 extends Component {
       list7: [],
       list8: [],
       list9: [],
+      id_ccs: this.Auth.getProfile().id_ccs,
+      form: "QA-1",
+    };
+  }
+
+  async onSave(e) {
+    try {
+      var respuesta = await API.guardaActividad(this.state);
+
+      swal({
+        title: "Status Actividad",
+        text: "Se guardo la actividad: 1, con id: " + respuesta[0].id,
+        icon: "success",
+        dangerMode: true,
+        button: {
+          text: "Aceptar",
+          value: true,
+          visible: true,
+          className: "btn btn-primary",
+          reset: true,
+        },
+      });
+
+      // alert("Se guardo la actividad: 1, con id: " + respuesta[0].id);
+    } catch (err) {
+      swal({
+        title: "Status Actividad",
+        text: "No se guardo la actividad: 1, Intenta de nuevo. ",
+        icon: "error",
+        dangerMode: true,
+        button: {
+          text: "Cerrar",
+          value: true,
+          visible: true,
+          className: "btn btn-primary ",
+        },
+      });
+      console.log("loggea si hay un error...");
     }
   }
 
@@ -69,11 +112,11 @@ class List2 extends Component {
         <div className="col">
           <div className="card  bg-fondo-btn2 pl-4 pr-4">
             <h6 className="text-center text-white mt-2">¡Arrastra aqui!</h6>
-                 
-            <table className="table table-bordered" >
+
+            <table className="table table-bordered">
               <tbody>
                 <tr>
-                  <th rowspan="5" className="align-middle text-danger">
+                  <th rowSpan="5" className="align-middle text-danger">
                     <ReactSortable
                       list={this.state.list9}
                       setList={(newState) => this.setState({ list9: newState })}
@@ -206,22 +249,26 @@ class List2 extends Component {
                 </tr>
               </tbody>
             </table>
+            {/* <p>
+              {JSON.stringify(this.state)}
+            </p> */}
           </div>
         </div>
 
         <div className="col-12 mt-3 ">
-          <button className="btn btn-primary" 
-          >Enviar</button>
+          <button className="btn btn-primary" onClick={this.onSave.bind(this)}>
+            Enviar
+          </button>
         </div>
         <div className="col-12 mt-3 ">
           <Nota
             title1="Instrucción:"
-            content1="Arrastre los las Definiciones correctas a la tabla."
+            content1="Arrastre  las Definiciones correctas a la tabla."
           />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default List2
+export default List2;
