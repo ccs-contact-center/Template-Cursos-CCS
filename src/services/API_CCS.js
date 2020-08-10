@@ -36,4 +36,23 @@ export default class API_CCS {
       return Promise.resolve(res);
     });
   }
+
+  guardaActividad(data){
+    return this.fetch(hostURL + "/v1/capacitacion/Actividades", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }).then(res => {
+      return Promise.resolve(res);
+    })
+  }
+
+  guardaEncuesta(data){
+    return this.fetch(hostURL + "/v1/capacitacion/formularioEncuesta", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }).then(res => {
+      return Promise.resolve(res);
+    })
+  }
+
 }
