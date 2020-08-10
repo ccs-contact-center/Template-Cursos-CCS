@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardBody, CardHeader, Col, Row, Button } from 'reactstrap'
+import {  CardBody, CardHeader, Col, Row, Button } from 'reactstrap'
 import temaTresView from '../../assets/img/img-cursoQA/temaTresView.jpg'
 import Modal1 from './componentsExtras/modales'
 import {
