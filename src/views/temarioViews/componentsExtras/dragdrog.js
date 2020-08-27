@@ -67,7 +67,7 @@ class List2 extends Component {
           reset: true,
         },
       });
-
+      
       // alert("Se guardo la actividad: 1, con id: " + respuesta[0].id);
     } catch (err) {
       swal({
@@ -82,10 +82,9 @@ class List2 extends Component {
           className: "btn btn-primary ",
         },
       });
-      console.log("loggea si hay un error...");
+      console.log("loggea si hay un error");
     }
   }
-
   render() {
     return (
       <div className="row align-items-start centrado-fila ">
@@ -249,9 +248,9 @@ class List2 extends Component {
                 </tr>
               </tbody>
             </table>
-            {/* <p>
+           {/* <p>
               {JSON.stringify(this.state)}
-            </p> */}
+            </p>  */}
           </div>
         </div>
 
